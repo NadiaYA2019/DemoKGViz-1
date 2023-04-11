@@ -256,7 +256,7 @@ function formatDataTmpRain(data) {
 
     d.values.push({
         type: "line",
-        label: "Température moyenne (°C)",
+        label: "Daily mean temperature (°C)",
         data: temp_avg_data,
         backgroundColor: "rgba(255, 159, 64, 0)",
         borderColor: "rgba(255, 159, 64, 1)",
@@ -269,7 +269,7 @@ function formatDataTmpRain(data) {
 
     d.values.push({
         type: "line",
-        label: "Température minimale (°C)",
+        label: "Daily minimum temperature (°C)",
         data: temp_min_data,
         backgroundColor: "rgba(40, 67, 135, 0)",
         borderColor: "rgba(40, 67, 135, 1)",
@@ -280,7 +280,7 @@ function formatDataTmpRain(data) {
 
     d.values.push({
         type: "line",
-        label: "Température maximale (°C)",
+        label: "Daily maximum temperature(°C)",
         data: temp_max_data,
         backgroundColor: "rgba(255, 99, 132, 0)",
         borderColor: "rgba(255, 99, 132, 1)",
@@ -290,7 +290,7 @@ function formatDataTmpRain(data) {
 
     d.values.push({
         type: "bar",
-        label: "Précipitations (mm)",
+        label: "Precipitations (mm)",
         data: rainfall_data,
         backgroundColor: "rgba(54, 162, 235, 0.2)",
         borderColor: "rgba(54, 162, 235, 1)",
@@ -341,7 +341,7 @@ function formatDataGddRain(data) {
 
     d.values.push({
         type: "line",
-        label: "Cumul Gdd (°C)",
+        label: "Accumulated Gdd (°C)",
         data: sum_gdd_data,
         backgroundColor: "rgba(255, 99, 132, 0)",
         borderColor: "rgba(255, 99, 132, 1)",
@@ -351,7 +351,7 @@ function formatDataGddRain(data) {
 
     d.values.push({
         type: "line",
-        label: "Cumul Precipitation (mm)",
+        label: "Cumulative Precipitation (mm)",
         data: sum_rainfall_data,
         backgroundColor: "rgba(54, 162, 235, 0)",
         borderColor: "rgba(54, 162, 235, 1)",
@@ -371,7 +371,7 @@ function formatDataGddRain(data) {
 
     d.values.push({
         type: "bar",
-        label: "Précipitations (mm)",
+        label: "Precipitations (mm)",
         data: rainfall_data,
         backgroundColor: "rgba(54, 162, 235, 0.2)",
         borderColor: "rgba(54, 162, 235, 1)",
@@ -399,7 +399,7 @@ function formatDataNumb(data) {
 
     d.values.push(
         {
-            label: ['Nombre de jours '],
+            label: ['Number of days '],
             data: numbers,
             backgroundColor: [
                 'rgba(0, 0, 255, 0.2)',

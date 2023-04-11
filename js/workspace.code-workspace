@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "../../../generated-doc-wekgOntology"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "generated-doc-wekgOntology"
+	}
+}

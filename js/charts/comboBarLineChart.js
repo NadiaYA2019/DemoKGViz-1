@@ -31,6 +31,7 @@ function drawComboChart(data, canvasElement) {
                     }
                 }
             },
+            
         }
     });
     return comboChart;

@@ -25,7 +25,11 @@ function drawPolarChart(data, canvasElement) {
             datasets: data.values
     },
     options: {
-        responsive: true
+        responsive: true,
+        title: {
+            display: true,
+            text: 'Chart.js Line Chart'
+          }
     }
     });
     return polarChart;

@@ -52,11 +52,11 @@
             <p id="localisation-select">
                 <select id="select-station" onchange="stationChanged()"></select>
 
-                <button class="zoom" id="zoom-reunion" onclick="zoomToReunionMayotte()">Réunion/Mayotte</button>
+                <button class="zoom" id="zoom-reunion" onclick="zoomToReunionMayotte()">Réunion Island/Mayotte</button>
                 <button class="zoom" id="zoom-guyane" onclick="zoomToGuyane()">Guyane</button>
                 <button class="zoom" id="zoom-guadeloupe" onclick="zoomToGuadeloupeMartinique()">Guadeloupe/Martinique</button>
                 <button class="zoom" id="zoom-stPierre" onclick="zoomToStPierreEtMiquelon()">Saint-Pierre-Et-Miquelon</button>
-                <button class="zoom" id="zoom-france" onclick="zoomToFrance()">Metropolis</button>
+                <button class="zoom" id="zoom-france" onclick="zoomToFrance()">Metropolitan Area</button>
 
                 <!--Load options -->
                 <script>stationLoad();</script>
@@ -80,17 +80,17 @@
     
                     <input TYPE=CHECKBOX name="TMin" id="TMin" type="CHECKBOX" onclick="checkParameters(['TmpRain','TMin'])"> Daily minimum temperature (T<sub>min</sub>) 
                     <t class="tooltipParam">[?]
-                        <span class="tooltiptextParam">The daily minimum temperature represents the lower temperature for each days</span>
+                        <span class="tooltiptextParam">The daily minimum temperature represents the lower air temperature recorded from 18:00 UTC day d-1 till 18:00 UTC day d </span>
                     </t></br>
     
                     <input TYPE=CHECKBOX name="TMax" id="TMax" type="CHECKBOX" onclick="checkParameters(['TmpRain','TMax'])"> Daily maximum temperature (T<sub>max</sub>)
                     <t class="tooltipParam">[?]
-                        <span class="tooltiptextParam">The daily maximum temperature represents the higher temperature for each days</span>
+                        <span class="tooltiptextParam">The daily maximum temperature represents the highest air temperature recorded from 6:00 UTC day d till 6:00 UTC day d+1</span>
                     </t></br>
     
                     <input TYPE=CHECKBOX name="TMean" id="TMean" type="CHECKBOX" onclick="checkParameters(['TmpRain','TMean'])"> Daily mean temperature (T<sub>avg</sub>)
                     <t class="tooltipParam">[?]
-                        <span class="tooltiptextParam">The daily mean temperature represents the awerage temperature for each days</span>
+                        <span class="tooltiptextParam">The daily mean temperature represents the average value of daily maximum and minimum temperatures </span>
                     </t></br>
                     
                     <input TYPE=CHECKBOX name="TDiff" id="TDiff" type="CHECKBOX" onclick="checkParameters(['TmpRain','TDiff'])"> Daily thermal amplitude (T<sub>Diff</sub>)
@@ -105,7 +105,7 @@
     
                     <input TYPE=CHECKBOX name="meanTMin" id="meanTMin" type="CHECKBOX" onclick="checkParameters(['','meanTMin'])"> Average minimum temperature (meanTMin)
                     <t class="tooltipParam">[?]
-                        <span class="tooltiptextParam">The Average minimum temperature represents the awerage lower temperature for a period</span>
+                        <span class="tooltiptextParam">The Average minimum temperature represents the average lower temperature for a period</span>
                     </t></br>
     
                     <input TYPE=CHECKBOX name="meanTMax" id="meanTMax" type="CHECKBOX" onclick="checkParameters(['','meanTMax'])"> Average maximum temperature (meanTMax)
@@ -127,7 +127,7 @@
     
                     <input TYPE=CHECKBOX name="rainDay" id="rainDay" type="CHECKBOX" onclick="checkParameters(['TmpRain','rainDay'])"> Daily precipitation (rainDay)
                     <t class="tooltipParam">[?]
-                        <span class="tooltiptextParam">Cumulative daily precipitation R<sub>d</sub> recorded from 6:00 UTC day d till 6:00 UTC day d+1 </span>
+                        <span class="tooltiptextParam"> Daily cumulative precipitation R<sub>d</sub> recorded from 6:00 UTC day d till 6:00 UTC day d+1 </span>
                     </t></br>
     
                     <input TYPE=CHECKBOX name="nbRainDay" id="nbRainDay" type="CHECKBOX" onclick="checkParameters(['Numb','nbRainDay'])"> Number of rainy days (nbRainDay)
@@ -135,7 +135,7 @@
                         <span class="tooltiptextParam">Number of rainy days represents the number of days during which R<sub>d</sub> > 1mm</span>
                     </t></br>
 
-                    <input TYPE=CHECKBOX name="sumRain" id="sumRain" type="CHECKBOX" onclick="checkParameters(['GddRain','sumRain'])"> Total precipitation (sumRain)
+                    <input TYPE=CHECKBOX name="sumRain" id="sumRain" type="CHECKBOX" onclick="checkParameters(['GddRain','sumRain'])"> Cumulative precipitation (sumRain)
                     <t class="tooltipParam">[?]
                         <span class="tooltiptextParam">Sum of daily cumulative precipitation recorded during a period </span>
                     </t></br>
