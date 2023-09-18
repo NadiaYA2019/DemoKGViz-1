@@ -1,0 +1,36 @@
+{
+  "name": "demokgviz",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.2.96",
+    "@vuepic/vue-datepicker": "^4.3.0",
+    "apollo-server-errors": "^3.3.1",
+    "apollo-server-express": "^3.12.0",
+    "axios": "^1.3.4",
+    "chart.js": "^4.2.1",
+    "chartjs-plugin-zoom": "^2.0.1",
+    "crypto-js": "^4.1.1",
+    "install": "^0.13.0",
+    "material-design-icons-iconfont": "^6.7.0",
+    "papaparse": "^5.4.1",
+    "rdflib": "^2.2.32",
+    "uniqolor": "^1.1.0",
+    "vue": "^3.2.47",
+    "vue-chartjs": "^5.2.0",
+    "vue-latest-table": "^1.0.5",
+    "vuetify": "^3.3.10",
+    "vuex": "^4.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vue-leaflet/vue-leaflet": "^0.9.0",
+    "leaflet": "^1.9.3",
+    "vite": "^4.4.9"
+  }
+}

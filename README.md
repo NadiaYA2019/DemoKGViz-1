@@ -1,45 +1,53 @@
+# DemoKGViz-1
 
+## Déploiement du site
 
-DemoKGViz-2
-=========
+### Compilation
 
-> Calculating and Visualizing Agro-Meteorological Parameters based on WeKG-MF Knowledge Graph
+Tout d'abord, il faut se rendre sur la branche main du projet.
 
+Ensuite, il faut effectuer la commande permettant de compiler le projet ci-dessous
 
-Abstract
---------
+```
+npm run build
+``` 
 
-The recent trend of adopting linked-data principles to integrate and publish semantically described open data using W3C standards has led to a large amount of available resources.
-In particular, meteorological sensor data have been uplifted into public weather-focused RDF graphs, such as WeKG-MF which offers access to a large set of meteorological variables described through spatial and temporal dimensions.
-Nevertheless, these resources include huge numbers of raw observations that are tedious to be explored and reused by lay users. In this paper, we rely on WeKG-MF, to compute various agro-meteorological parameters and synthesized view on them with SPARQL queries. As a result, a LOD platform deployed as a web application allows users to navigate, consume and produce linked datasets of agro-meterological parameters calculated on-the-fly on WeKG-MF.
+Une fois que la compilation est terminée, on peut voir qu'un nouveau dossier appelé dist est apparu. A l'intérieur se trouve les fichiers notre site Internet.
 
+### Github Pages
 
+#### Mettre le site sur le dépôt
 
-Online demonstrator
--------------------
+Après avoir compilé le projet, se rendre sur la page du dépôt et sélectionner la branche de déploiement `deploy`
 
-An online demonstrator of the interface is available at
-<https://nadiaya2019.github.io/DemoKGViz-1/>.
+![Alt text](https://cdn.discordapp.com/attachments/1092435460879556618/1116752893949780048/168632496218260488.png)
 
+Ensuite, cliquer sur `Add File`, puis `Upload File`.
 
-Repository files
-----------------
+![Alt text](https://cdn.discordapp.com/attachments/1092435460879556618/1116753140356763738/168632502018319099.png)
 
-This repository contains:
+Pour finir, glisser l'intégralité des fichiers présents dans le dossier `/dist` à l'intérieur et cliquer sur `Commit changes`.
 
-- `README.md` (this file): providing documentation;
-- `index.html`: the interface Web page, allowing to calculate and visualize different charts of agro-meteorological parameters according to users's preferences (location, time period);
-- `css/`: contains the style files;
-- `js/`: gathers JavaScript libraries;
-- `LICENSE.md`.
-- `WeKG-MF SPARQL Queries.ipynb` : A `sparqlkernel` jupyter notebook of SPARQL queries (using sparqlkernel package)
+![Alt text](https://cdn.discordapp.com/attachments/1092435460879556618/1116753289803993138/168632505618354668.png)
 
+#### Créer la page GitHub
 
-Corresponding Author
--------
+La prochaine étape est de déployer le site en ligne. Pour cela, il faut se rendre sur le dépôt, puis dans les réglages du dépôt.
 
-Nadia Yacoubi Ayadi <https://orcid.org/0000-0002-6132-8718> 
+![Alt text](https://cdn.discordapp.com/attachments/1092435460879556618/1116747428641648680/168632365816957270.png)
 
-University Cote d'Azur, Inria, CNRS, I3S (UMR 7271), France 
+Ensuite, se rendre dans la catégorie `Pages`.
 
-2023
+![Alt text](https://cdn.discordapp.com/attachments/1092435460879556618/1116751459212611614/168632461917918226.png)
+
+Puis, cliquer sur `Source` et sélectionner `Deploy from a branch`.
+
+![Alt text](https://cdn.discordapp.com/attachments/1092435460879556618/1116747616940732466/168632370317002231.png)
+
+Il faut sélectionner la branche qui contient notre site, qui est la branche `deploy`.
+
+![Alt text](https://cdn.discordapp.com/attachments/1092435460879556618/1116747655327010917/168632371317011848.png)
+
+Pour finir, il reste à appuyer sur `Save` pour mettre en ligne le site. On peut voir l'adresse à laquelle le site sera disponible.
+
+![Alt text](https://cdn.discordapp.com/attachments/1092435460879556618/1116747842946605147/168632375717055982.png)
