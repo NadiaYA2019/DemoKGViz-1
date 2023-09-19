@@ -1,5 +1,19 @@
 # DemoKGViz-1
 
+## Repository files
+Le dossier src est organisé comme suit:
+* assets: contient la représentation en région de la France
+* component : Ensemble des components permettant d'afficher la bar latéralles et les différents graphiques
+* config: contient la description de tous les paramètres affichables
+* img: les images
+* queries: contient l'ensembles des queries SPARQL
+* store: continent les différents stores permettant nottament de gérer les appel à la base de données
+* utils: fonctions de traitement supplémentaires
+* App.vue: fichier paramètre de Vue
+* main.js : fichier paramètre de javascript
+
+
+
 ## Déploiement du site
 
 ### Compilation
